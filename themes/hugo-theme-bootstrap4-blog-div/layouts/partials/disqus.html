@@ -1,0 +1,15 @@
+<div id="disqus_thread"></div>
+<script src="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqus.js"></script>
+<script>
+var dsqjs = new DisqusJS({
+    shortname: 'outbegin',
+    siteName: 'outbegin.com',
+    identifier: {{ printf "%s" .RelPermalink }},
+    url: {{ printf "%s" .Permalink }},
+    title: {{ substr .Title 0 110 }},
+    api: 'https://lucky-glade-03d3.outbegin.workers.dev/api/',
+    apikey: 'H1ehJuTm3Xvg1TDY3VKFozxu9gQmeg9hqkryoEudRKn4uqZt0Oj72gwAYdRbGBpR',
+    admin: 'outbegin',
+    adminLabel: ''
+});
+</script>
