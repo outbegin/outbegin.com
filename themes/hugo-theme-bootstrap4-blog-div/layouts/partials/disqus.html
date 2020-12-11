@@ -3,12 +3,12 @@
 <script>
 var dsqjs = new DisqusJS({
     shortname: 'outbegin',
-    siteName: 'outbegin.com',
-    identifier: {{ printf "%s" .RelPermalink }},
+    siteName: 'outbegin blog',
+    identifier: {{ md5 .RelPermalink }},
     url: {{ printf "%s" .Permalink }},
     title: {{ substr .Title 0 110 }},
     api: 'https://lucky-glade-03d3.outbegin.workers.dev/api/',
-    apikey: 'H1ehJuTm3Xvg1TDY3VKFozxu9gQmeg9hqkryoEudRKn4uqZt0Oj72gwAYdRbGBpR',
+    apikey: '90ulo78mtz4wSpxxNjvNPQE92JwslX2W0DjjpMRbOud5kmwc753qPLz5DwqiA2MC',
     admin: 'outbegin',
     adminLabel: ''
 });
